@@ -2,20 +2,65 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#1a1a1a">
     <title>Carta - Perrito Street</title>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        html, body { width: 100%; height: 100%; overflow: hidden; background: #1a1a1a; }
-        iframe {
-            display: block;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
             width: 100%;
-            height: 100vh;
-            border: none;
+            background: #1a1a1a;
+            overflow-x: hidden;
+        }
+
+        .pages-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0;
+            width: 100%;
+        }
+
+        .page {
+            width: 100%;
+            max-width: 900px;
+            display: block;
+            line-height: 0;
+        }
+
+        .page img {
+            width: 100%;
+            height: auto;
+            display: block;
         }
     </style>
 </head>
 <body>
-    <iframe src="./carta.pdf" title="Carta Perrito Street"></iframe>
+    <div class="pages-wrapper">
+        <div class="page"><img src="pages/page_01.jpg" alt="Página 1" loading="eager"></div>
+        <div class="page"><img src="pages/page_02.jpg" alt="Página 2" loading="lazy"></div>
+        <div class="page"><img src="pages/page_03.jpg" alt="Página 3" loading="lazy"></div>
+        <div class="page"><img src="pages/page_04.jpg" alt="Página 4" loading="lazy"></div>
+        <div class="page"><img src="pages/page_05.jpg" alt="Página 5" loading="lazy"></div>
+        <div class="page"><img src="pages/page_06.jpg" alt="Página 6" loading="lazy"></div>
+        <div class="page"><img src="pages/page_07.jpg" alt="Página 7" loading="lazy"></div>
+        <div class="page"><img src="pages/page_08.jpg" alt="Página 8" loading="lazy"></div>
+        <div class="page"><img src="pages/page_09.jpg" alt="Página 9" loading="lazy"></div>
+        <div class="page"><img src="pages/page_10.jpg" alt="Página 10" loading="lazy"></div>
+        <div class="page"><img src="pages/page_11.jpg" alt="Página 11" loading="lazy"></div>
+        <div class="page"><img src="pages/page_12.jpg" alt="Página 12" loading="lazy"></div>
+        <div class="page"><img src="pages/page_13.jpg" alt="Página 13" loading="lazy"></div>
+        <div class="page"><img src="pages/page_14.jpg" alt="Página 14" loading="lazy"></div>
+        <div class="page"><img src="pages/page_15.jpg" alt="Página 15" loading="lazy"></div>
+        <div class="page"><img src="pages/page_16.jpg" alt="Página 16" loading="lazy"></div>
+        <div class="page"><img src="pages/page_17.jpg" alt="Página 17" loading="lazy"></div>
+        <div class="page"><img src="pages/page_18.jpg" alt="Página 18" loading="lazy"></div>
+        <div class="page"><img src="pages/page_19.jpg" alt="Página 19" loading="lazy"></div>
+    </div>
 </body>
 </html>
