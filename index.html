@@ -38,6 +38,34 @@
             height: auto;
             display: block;
         }
+
+        /* Página 19 con QR clickeable */
+        .page-qr {
+            position: relative;
+            width: 100%;
+            max-width: 900px;
+            line-height: 0;
+        }
+
+        .page-qr img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .qr-link {
+            position: absolute;
+            /* El QR está centrado horizontalmente y ocupa la mitad inferior de la página */
+            left: 15%;
+            right: 15%;
+            top: 55%;
+            bottom: 8%;
+            display: block;
+            cursor: pointer;
+            /* Transparente — no cambia el diseño visual */
+            background: transparent;
+            border-radius: 8px;
+        }
     </style>
 </head>
 <body>
@@ -60,7 +88,10 @@
         <div class="page"><img src="pages/page_16.jpg" alt="Página 16" loading="lazy"></div>
         <div class="page"><img src="pages/page_17.jpg" alt="Página 17" loading="lazy"></div>
         <div class="page"><img src="pages/page_18.jpg" alt="Página 18" loading="lazy"></div>
-        <div class="page"><img src="pages/page_19.jpg" alt="Página 19" loading="lazy"></div>
+        <div class="page-qr">
+            <img src="pages/page_19.jpg" alt="Página 19" loading="lazy">
+            <a class="qr-link" href="https://search.google.com/local/writereview?placeid=ChIJ1-lxPd2DYw0RWmUoCBJcXfE" target="_blank" rel="noopener" aria-label="Déjanos tu reseña en Google"></a>
+        </div>
     </div>
 </body>
 </html>
